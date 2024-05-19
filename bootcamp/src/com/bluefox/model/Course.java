@@ -3,7 +3,6 @@ package com.bluefox.model;
 public class Course extends Content {
     
     private int workload;
-    
 
     public Course(String contentTitle, String contentDescription, int workload) {
         super(contentTitle, contentDescription);
@@ -12,7 +11,7 @@ public class Course extends Content {
 
     @Override
     public double calculeteXP() {
-        return this.getXpStandard() * workload;
+        return Content.getXpStandard() * workload;
     }
 
     public int getWorkload() {
@@ -23,7 +22,5 @@ public class Course extends Content {
     public String toString() {
         return "Course [workload: " + workload + ", getContentId(): " + this.getContentId() + ", getContentTitle(): "
                 + this.getContentTitle() + ", getContentDescription(): " + this.getContentDescription() + "]";
-    }
-
-    
+    }    
 }
