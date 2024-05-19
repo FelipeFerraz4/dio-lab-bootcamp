@@ -1,7 +1,6 @@
 package com.bluefox.view;
 
 import java.time.LocalDate;
-import java.util.Collections;
 
 import com.bluefox.model.Bootcamp;
 import com.bluefox.model.Course;
